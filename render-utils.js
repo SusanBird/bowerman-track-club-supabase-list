@@ -1,4 +1,4 @@
-export function renderAthlete() {
+export function renderAthlete(athlete) {
 
     const athleteEl = document.createElement('div');
     const nameEl = document.createElement('h2');
@@ -10,4 +10,14 @@ export function renderAthlete() {
 
     athleteEl.classList.add('BTC-athlete');
 
+    nameEl.textContent = athlete.name;
+    careerHighlightsEl.textContent = athlete.careerHighlights;
+    yearsWithBTCEl.textContent = athlete.yearsWithBTC;
+    nationalRecordsEl.textContent = athlete.nationalRecords;
+    ageEl.textContent = athlete.age;
+    personalBestsEl.textContent = athlete.personalBests;
+
+    athleteEl.append(nameEl, careerHighlightsEl, yearsWithBTCEl, nationalRecordsEl, ageEl, personalBestsEl);
+
+    return athleteEl;
 }
