@@ -25,8 +25,8 @@ export function renderAthleteDetail(athlete) {
     const personalBestsEl = document.createElement('ul');
 
     athleteEl.classList.add('BTC-athlete-detail');
-    nameEl.textContent = athlete.flavor;
-    imgEl.src = athlete.image; 
+    nameEl.textContent = athlete.name;
+    imgEl.src = athlete.img; 
     ageEl.textContent = athlete.age;
     yearsWithBTCEl.textContent = athlete.yearsWithBTC;
     // careerHighlightsEl.textContent = athlete.careerHighlights;
