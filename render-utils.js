@@ -1,13 +1,13 @@
 export function renderAthlete(athlete) {
 
-    const athleteEl = document.createElement('div');
+    const athleteEl = document.createElement('a');
     const nameEl = document.createElement('h2');
     const imgEl = document.createElement('img');
 
     athleteEl.href = `./athletes/?id=${athlete.id}`;
     athleteEl.classList.add('BTC-athlete');
     nameEl.textContent = athlete.name;
-    imgEl.src = athlete.image; //name of table instead?
+    imgEl.src = athlete.img; 
 
     athleteEl.append(nameEl, imgEl);
 
@@ -26,7 +26,7 @@ export function renderAthleteDetail(athlete) {
 
     athleteEl.classList.add('BTC-athlete-detail');
     nameEl.textContent = athlete.flavor;
-    imgEl.src = athlete.image; //name of table instead?
+    imgEl.src = athlete.image; 
     ageEl.textContent = athlete.age;
     yearsWithBTCEl.textContent = athlete.yearsWithBTC;
     // careerHighlightsEl.textContent = athlete.careerHighlights;
