@@ -17,3 +17,14 @@ export async function getAllAthletes() {
 
     return response.body;
 }
+
+export async function getAthleteById(someId) {
+
+    const response = await client
+        .from('BowermanTrackClub')
+        .select('*')
+        .match({ id: someId })
+        .single();
+    
+    return response.body;
+}
