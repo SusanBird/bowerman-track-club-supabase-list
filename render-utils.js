@@ -27,11 +27,8 @@ export function renderAthleteDetail(athlete) {
     athleteEl.classList.add('BTC-athlete-detail');
     nameEl.textContent = athlete.name;
     imgEl.src = athlete.img; 
-    ageEl.textContent = athlete.age;
-    yearsWithBTCEl.textContent = athlete.yearsWithBTC;
-    // careerHighlightsEl.textContent = athlete.careerHighlights;
-    // nationalRecordsEl.textContent = athlete.nationalRecords;
-    // personalBestsEl.textContent = athlete.personalBests;
+    ageEl.textContent = `Age: ${athlete.age}`;
+    yearsWithBTCEl.textContent = `Years with BTC: ${athlete.yearsWithBTC}`;
 
     for (let careerHighlight of athlete.careerHighlights) {
         const careerHighlightEl = document.createElement('li');
@@ -44,7 +41,7 @@ export function renderAthleteDetail(athlete) {
     for (let nationalRecord of athlete.nationalRecords) {
         const nationalRecordEl = document.createElement('li');
 
-        nationalRecordEl.textContent = nationalRecord;
+        nationalRecordEl.textContent = `National Record: ${nationalRecord}`;
 
         nationalRecordsEl.append(nationalRecordEl);
     }
@@ -52,7 +49,7 @@ export function renderAthleteDetail(athlete) {
     for (let personalBest of athlete.personalBests) {
         const personalBestEl = document.createElement('li');
 
-        personalBestEl.textContent = personalBest;
+        personalBestEl.textContent = `- ${personalBest}`;
 
         personalBestsEl.append(personalBestEl);
     }

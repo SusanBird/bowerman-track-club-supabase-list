@@ -50,6 +50,8 @@ section {
     margin-top: var(--gutter);
     margin-bottom: var(--gutter);
     border: solid 2px var(--color1);
+    /* background-image: ; */
+    background-image: url('assets/red-lightning.png');
 }
 
 header {
@@ -116,13 +118,13 @@ footer {
     box-shadow: var(--shadow);
     padding: 10px;
     margin: 20px;
-    background-color: lightblue;
+    background-color: rgb(158, 36, 36);
     text-align: center;
     transition: all 0.1s ease-in-out;
 }
 
 .BTC-athlete:hover {
-    transform: rotate(10deg);
+    transform: scale(1.5);
 }
 
 .BTC-athlete img {
