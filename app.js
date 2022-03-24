@@ -18,7 +18,5 @@ window.addEventListener('load', async () => {
 
         athletesListEL.append(athleteEl);
     }
-
-   
 });
 
