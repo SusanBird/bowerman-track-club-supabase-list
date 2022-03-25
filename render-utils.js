@@ -36,6 +36,8 @@ export function renderAthleteDetail(athlete) {
         careerHighlightEl.textContent = careerHighlight;
 
         careerHighlightsEl.append(careerHighlightEl);
+
+        // careerHighlightsEl.textContent = `Career Highlights: ${athlete.careerHighlightsEl}`;
     }
 
     for (let nationalRecord of athlete.nationalRecords) {
